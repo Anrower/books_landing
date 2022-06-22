@@ -600,7 +600,7 @@ body {
 }
 
 .learn {
-  padding: 120px 30px 140px;
+  padding: 120px 0 140px;
 }
 
 .learn_left {
@@ -658,4 +658,78 @@ body {
   position: absolute;
   top: -50px;
   left: -50px;
+}
+
+.enchance {
+  padding: 100px 0 120px;
+}
+
+.enchance_header {
+  margin-top: 16px;
+}
+
+.enchance_card {
+  background-color: var(--white);
+  width: 635px;
+  height: 242px;
+  padding: 42px 40px 35px;
+}
+
+.enchance_card_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--blue);
+}
+
+.enchance_card_text {
+  margin-top: 21px;
+  line-height: 32px;
+}
+
+.enchance_description_wrapper {
+  display: flex;
+  gap: 65px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.enchance_header_description {
+  color: var(--blue);
+}
+
+.enchance-cards_container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.enchance_text_description {
+  color: var(--gray);
+}
+
+.enchance_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enchance_btn {
+  margin: 60px 0 34px;
+  width: 429px;
+  height: 76px;
+
+}
+
+.enchance_link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--gray);
 }
