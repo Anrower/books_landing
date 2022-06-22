@@ -1,23 +1,46 @@
-:root {
-  --white: #fff;
-  --blue: #1b3764;
-  --gray: #969AA0;
-  --light-gray: #b4c7e7;
-  --yellow: #ffca42;
-  --link_light: #f6f8fC;
-  --prim_btn_text: #1b3764;
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-li {
-  list-style-type: none;
-  /* Убираем маркеры */
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-ul {
-  margin-left: 0;
-  /* Отступ слева в браузере IE и Opera */
-  padding-left: 0;
-  /* Отступ слева в браузере Firefox, Safari, Chrome */
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
 }
 
 a {
@@ -29,6 +52,16 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+:root {
+  --white: #fff;
+  --blue: #1b3764;
+  --gray: #969AA0;
+  --light-gray: #b4c7e7;
+  --yellow: #ffca42;
+  --link_light: #f6f8fC;
+  --prim_btn_text: #1b3764;
+}
+
 .wrapper__blue {
   background-color: var(--blue);
 }
@@ -38,15 +71,21 @@ body {
   max-width: 1300px;
 }
 
-.header_container {
+.container {
   display: flex;
   justify-content: space-between;
+}
+
+.header_container {
   padding: 20px 0 20px;
 }
 
-.header_left {
+.left {
   display: flex;
   align-items: center;
+}
+
+.header_left {
   gap: 35px;
 }
 
@@ -76,7 +115,7 @@ body {
   height: 15px;
 }
 
-.header_right {
+.right {
   display: flex;
   align-items: center;
 }
@@ -131,4 +170,146 @@ body {
   background-color: var(--yellow);
   border: none;
   cursor: pointer;
+}
+
+.welcome {
+  padding: 100px 0;
+}
+
+.welcome_right_content {
+  margin-left: 24px;
+  max-width: 589px;
+}
+
+.welcome_h4_container {
+  display: flex;
+  position: relative;
+}
+
+.yellow_line {
+  margin: 0;
+  top: 17px;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background: var(--yellow);
+}
+
+.welcome_h4 {
+  margin-left: 49px;
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+  color: var(--white);
+}
+
+.primary_text {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 78px;
+  letter-spacing: 1.3px;
+  color: var(--white)
+}
+
+.secondary_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  color: var(--gray);
+}
+
+.welcome_secondary_text {
+  margin-top: 24px;
+  font-size: 18px;
+  color: var(--light-gray);
+}
+
+.welcome_btns {
+  display: flex;
+  gap: 51px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.welcome_btn_secondary {
+  width: 155px;
+  height: 32px;
+}
+
+.secondary_btn {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.38px;
+  text-transform: capitalize;
+  color: var(--white);
+  border: none;
+  border-bottom: 2px solid var(--white);
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.book_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome_book_description {
+  margin-top: 40px;
+  gap: 60px;
+}
+
+.description_pages,
+.description_length,
+.description_raiting {
+  position: relative;
+  display: flex;
+  gap: 12px;
+}
+
+.book_description_header::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: -25px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+}
+
+.welcome_description_pages,
+.welcome_description_length,
+.welcome_description_raiting {
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.book_description_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.48px;
+  color: var(--white)
+}
+
+.book_description_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: var(--light-gray);
 }
