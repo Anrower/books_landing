@@ -17,6 +17,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -64,6 +66,10 @@ body {
 
 .wrapper__blue {
   background-color: var(--blue);
+}
+
+.wrapper__white {
+  background-color: var(--white);
 }
 
 .content {
@@ -238,12 +244,12 @@ body {
   margin-top: 22px;
 }
 
-.welcome_btn_secondary {
+.welcome_btn_tertiary {
   width: 155px;
   height: 32px;
 }
 
-.secondary_btn {
+.tertiary_btn {
   font-family: 'Cardo';
   font-style: normal;
   font-weight: 400;
@@ -312,4 +318,111 @@ body {
   font-size: 17px;
   line-height: 27px;
   color: var(--light-gray);
+}
+
+.author {
+  padding: 130px 0 90px;
+}
+
+.h2_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--blue);
+}
+
+.after_header_h2 {
+  width: 50px;
+  height: 3px;
+  background: var(--yellow);
+  margin-top: 23px;
+  border: none;
+}
+
+.author_container {
+  margin-top: 10px;
+}
+
+.author_right_content,
+.author_left_container {
+  gap: 30px;
+}
+
+.about_book {
+  display: flex;
+  flex-direction: column;
+  max-width: 315px;
+  margin-top: 38px;
+  align-items: flex-start;
+}
+
+.about_book_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.32px;
+  color: var(--blue);
+}
+
+.about_book_price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 33px;
+  color: var(--yellow);
+  margin-top: 7px;
+}
+
+.about_book_text {
+  max-width: 287px;
+  margin-top: 17px;
+}
+
+.about_book_type {
+  position: relative;
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--blue);
+  margin-top: 13px;
+  margin-left: 26px;
+}
+
+.about_book_type>span::before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  left: -26px;
+  top: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+.secondary_btn {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.38px;
+  color: var(--blue);
+  width: 206px;
+  height: 66px;
+  background-color: inherit;
+  border: 2px solid var(--yellow);
+  cursor: pointer;
+}
+
+.about_book_btn {
+  margin-top: 9px;
 }
