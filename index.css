@@ -733,3 +733,117 @@ body {
   text-align: center;
   color: var(--gray);
 }
+
+.comment {
+  padding: 120px 0 130px;
+}
+
+.comment_container {
+  gap: 30px;
+}
+
+.comment_header {
+  text-align: left;
+}
+
+.comment_after_header {
+  margin-left: 0;
+}
+
+.comment_left {
+  margin-top: 95px;
+  flex-direction: column;
+  max-width: 447px;
+  align-items: flex-start;
+}
+
+.comment_text {
+  margin-top: 30px;
+  line-height: 34px;
+}
+
+.comment_rating {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment_rating>span {
+  display: block;
+}
+
+.comment_rating>img {
+  width: 120px;
+  height: 20px;
+}
+
+.comment_rating_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--blue);
+}
+
+.comment_right {
+  flex-grow: 1;
+}
+
+.reader_cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 610px;
+}
+
+.reader_card {
+  width: 381px;
+  height: 292px;
+  padding: 30px 35px 24px;
+  background-color: var(--blue);
+}
+
+.reader_card:last-child {
+  margin-top: 165px;
+}
+
+.reader_card_header {
+  gap: 20px;
+}
+
+.reader_header_right {
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.reader_card_name {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white);
+}
+
+.reader_card_body {
+  margin-top: 20px;
+}
+
+.reader_card_qoute {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--white);
+}
+
+.reader_card_text {
+  margin-top: 13px;
+}
