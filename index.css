@@ -537,3 +537,35 @@ body {
 .author_info_link>span {
   margin-right: 10px;
 }
+
+.trusted {
+  padding: 110px 30px 170px
+}
+
+.trusted_container {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.trusted_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.trusted_card_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: var(--blue);
+}
+
+.trusted_card_text {
+  text-align: center;
+  padding: 0 10px;
+}
