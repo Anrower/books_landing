@@ -62,6 +62,7 @@ body {
   --yellow: #ffca42;
   --link_light: #f6f8fC;
   --prim_btn_text: #1b3764;
+  --wrapper_gray: #f5f8fc;
 }
 
 .wrapper__blue {
@@ -70,6 +71,10 @@ body {
 
 .wrapper__white {
   background-color: var(--white);
+}
+
+.wrapper__gray {
+  background-color: var(--wrapper_gray);
 }
 
 .content {
@@ -182,7 +187,7 @@ body {
   padding: 100px 0;
 }
 
-.welcome_right_content {
+.welcome_left_content {
   margin-left: 24px;
   max-width: 589px;
 }
@@ -425,4 +430,110 @@ body {
 
 .about_book_btn {
   margin-top: 9px;
+}
+
+.about {
+  padding: 150px 0 140px;
+}
+
+.about_left {
+  position: relative;
+  min-width: 545px;
+  height: 640px;
+  margin-left: 40px;
+  border: 10px solid var(--yellow);
+}
+
+.about_left>img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+.about_right {
+  max-width: 605px;
+  flex-direction: column;
+}
+
+.about_header {
+  margin-top: 56px;
+}
+
+.about_text {
+  line-height: 34px;
+}
+
+.about_author_stat {
+  min-width: 605px;
+  display: flex;
+  gap: 26px;
+  margin-top: 20px;
+}
+
+.author_stat_block {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 12px;
+  border-right: 1px solid var(--yellow);
+}
+
+.author_stat_block:last-child {
+  border-right: none;
+}
+
+.author_stat_num {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 77px;
+  color: var(--blue)
+}
+
+.author_stat_text {
+  font-size: 17px;
+}
+
+.about_author_info {
+  align-self: flex-start;
+  margin-top: 55px;
+  width: 484px;
+  height: 161px;
+  background-color: var(--blue);
+}
+
+.about_author_info_container {
+  padding: 20px;
+  gap: 36px;
+}
+
+.about_author_info_right {
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: start;
+}
+
+.author_ifo_header {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--yellow);
+  margin-bottom: 10px;
+}
+
+.author_info_link {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.19px;
+  color: var(--light-gray);
+}
+
+.author_info_link>span {
+  margin-right: 10px;
 }
