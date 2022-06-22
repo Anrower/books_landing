@@ -599,4 +599,63 @@ body {
   color: var(--white);
 }
 
-.get_book_right {}
+.learn {
+  padding: 120px 30px 140px;
+}
+
+.learn_left {
+  margin-top: 80px;
+}
+
+.learn_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.learn_card {
+  background-color: var(--wrapper_gray);
+  width: 303px;
+  height: 272px;
+}
+
+.learn_card_num {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  color: var(--blue);
+  padding: 13px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  margin: 30px 0 0 30px;
+}
+
+.learn_card_text {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--blue);
+  margin: 30px 37px 27px 30px;
+}
+
+.learn_right {
+  margin-top: 60px;
+  position: relative;
+  min-width: 545px;
+  height: 640px;
+  margin-left: 40px;
+  border: 10px solid var(--yellow);
+}
+
+.learn_right>img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
