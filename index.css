@@ -65,6 +65,46 @@ body {
   --wrapper_gray: #f5f8fc;
 }
 
+button,
+a,
+li,
+input[type="submit"] {
+  transition: all 500ms;
+}
+
+button:hover,
+a:hover,
+input[type="submit"]:hover {
+  transform: scale(0.95);
+}
+
+.footer_column_link {
+  transition-property: none;
+  transition-property: color;
+}
+
+.footer_column_link:hover {
+  transform: scale(1);
+  color: var(--link_light);
+}
+
+.footer_column_link:hover::before {
+  opacity: 0;
+}
+
+.nav_list_item>.nav_link:hover,
+.enchance_link:hover {
+  color: var(--light-gray);
+}
+
+/* .nav_list_item:hover {
+  transform: scale(0.95);
+} */
+
+.header_right>a:hover {
+  transform: scale(1.1);
+}
+
 .wrapper__blue {
   background-color: var(--blue);
 }
@@ -205,6 +245,7 @@ body {
   width: 35px;
   height: 2px;
   background: var(--yellow);
+  border: none;
 }
 
 .welcome_h4 {
