@@ -123,8 +123,31 @@ input[type="submit"]:hover {
 
 .content {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1320px;
+  padding: 0 10px;
 }
+
+/* @media (max-width:1320px) {
+  .content {
+    max-width: 970px;
+  }
+
+  .welcome_right_book {
+    max-width: 491px;
+  }
+}
+
+@media (max-width:992px) {
+  .content {
+    max-width: 750px;
+  }
+}
+
+@media (max-width:767px) {
+  .content {
+    max-width: none;
+  }
+} */
 
 .container {
   display: flex;
@@ -138,6 +161,7 @@ input[type="submit"]:hover {
 .left {
   display: flex;
   align-items: center;
+  /* max-width: 50%; */
 }
 
 .header_left {
@@ -174,6 +198,7 @@ input[type="submit"]:hover {
 .right {
   display: flex;
   align-items: center;
+  /* max-width: 50%; */
 }
 
 .header_right>a {
